@@ -1,8 +1,8 @@
 #!/bin/bash
 #SBATCH --job-name=trim_galore
-#SBATCH --partition=wanke
-#SBATCH --output=logs/trim_galore.out
-#SBATCH --erro=logs/trim_galore.err
+#SBATCH --partition=ripley
+#SBATCH --output=logs/%x_%j.out
+#SBATCH --erro=logs/%x_%j.err
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=2
 #SBATCH --mem=4G

@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --job-name=sra_toolkit
-#SBATCH --partition=wanke
+#SBATCH --partition=ripley
 #SBATCH --output=logs/%x_%j.out
 #SBATCH --erro=logs/%x_%j.err
 #SBATCH --ntasks=1

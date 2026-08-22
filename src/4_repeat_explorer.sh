@@ -1,8 +1,8 @@
 #!/bin/bash
-#SBATCH --job-name=test
-#SBATCH --partition=wanke
-#SBATCH --output=logs/repex.out
-#SBATCH --error=logs/repex.err
+#SBATCH --job-name=repex
+#SBATCH --partition=ripley
+#SBATCH --output=logs/%x_%j.out
+#SBATCH --error=logs/%x_%j.err
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=2
 #SBATCH --mem=20G

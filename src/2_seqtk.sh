@@ -1,6 +1,6 @@
-#SBATCH --partition=wanke
-#SBATCH --output=logs/first.out
-#SBATCH --erro=logs/second.err
+#SBATCH --partition=ripley
+#SBATCH --output=logs/%x_%j.out
+#SBATCH --erro=logs/%x_%j.err
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=2
 #SBATCH --mem=4G

@@ -9,7 +9,7 @@
 #SBATCH --time=04:00:00
 
 #Definir variables
-CONTAINER="containers/repeatexplorer_2.3.8.sif"
+CONTAINER="../../contenedores/repeatexplorer_2.3.8.sif"
 
 OUTDIR="results/rep_output"
 
@@ -18,7 +18,7 @@ mkdir ${OUTDIR}
 
 #Realizar todo el procedimiento de RepeatExplorer2
 while read ID; do
-        apptainer exec --bind /home/xa04/rep_test/results:/results\
+        apptainer exec --bind /srv/bishop/phylogenomics/phylogen5/rep_test/results:/results\
         ${CONTAINER}\
         /repex_tarean/seqclust\
         -p -v ${OUTDIR}\

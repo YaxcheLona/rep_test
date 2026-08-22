@@ -9,8 +9,8 @@
 #SBATCH --time=1:00:00
 
 #Definir variables
-CONTAINER1="containers/trim_galore.sif"
-CONTAINER2="containers/seqtk_latest.sif"
+CONTAINER1="../../contenedores/trim_galore.sif"
+CONTAINER2="../../contenedores/seqtk_latest.sif"
 
 INPUT="data/samp"
 OUTDIR1="results/trim_galore"

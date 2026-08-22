@@ -9,7 +9,7 @@
 #SBATCH --time=1:00:00
 
 #Definir variables
-CONTAINER="containers/seqtk_latest.sif"
+CONTAINER="../../contenedores/seqtk_latest.sif"
 
 INPUT="data/raw"
 OUTDIR="data/samp"

@@ -10,12 +10,12 @@
 
 # Definir variables
 
-CONTAINER="containers/sra_toolkit_latest.sif"
+CONTAINER="../../contenedores/sra_toolkit_latest.sif"
 
 OUTDIR1="data/sra"
 OUTDIR2="data/raw"
-# Crear directorio de salida
-
+# Crear directorio de resultados y de salida
+mkdir results
 mkdir -p ${OUTDIR1} ${OUTDIR2}
 
 # Crear loop con while

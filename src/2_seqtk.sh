@@ -1,3 +1,5 @@
+#!/bin/bash
+#SBATCH --job-name=seqtk
 #SBATCH --partition=ripley
 #SBATCH --output=logs/%x_%j.out
 #SBATCH --erro=logs/%x_%j.err
